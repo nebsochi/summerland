@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homes | SUMMERLAND</title>
+    <!-- <link rel="icon" type="image/png" href="assets/img/icon.png"> -->
+    <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet " type="text/css " media="screen " href="assets/pluggins/bootstrap/css/bootstrap.min.css ">
+    <!-- <link href="assets/pluggins/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/pluggins/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="assets/pluggins/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet"> -->
+    <!-- <link href="assets/pluggins/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet " href="assets/css/grid.css ">
+    <link rel="stylesheet " href="assets/css/main.css ">
+    <link rel="stylesheet " href="assets/css/styles.css ">
+</head>
+
+<body>
+
+    <section id="sideMenu">
+        <div class="nav__text">
+            <span><h2>SUMMERLAND</h2></span>
+        </div>
+        <nav class="nav__sidebar">
+            <a href="dashboard2.php" class="">
+                <span>
+                            <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                    </span>
+                <span> 
+                        Profile
+                    </span>
+            </a>
+
+            <a href="houses_1.html" class="active">
+                <span>
+                        <i class=" active fa fa-home" aria-hidden="true"></i>
+                    </span>
+                <span class="active"> 
+                        Property Details
+                    </span>
+            </a>
+            <a href="payment_form.html" class="">
+                <span>
+                         <i class=" side fa fa-credit-card-alt" aria-hidden="true"></i>
+                     </span>
+                <span> 
+                          Payment
+                    </span>
+            </a>
+            <a href="complaint2.php">
+                <span>
+                        <i class=" fa fa-comment-o" aria-hidden="true"></i>
+                      </span>
+                <span> 
+                           Complaint
+                    </span>
+            </a>
+        </nav>
+    </section>
+    <header class="nav__header">
+        <div class="nav__searchbar">
+            <!-- <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a> -->
+            <span class="span__searchbar"> <i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="text" name="" placeholder="Type here for search">
+        </div>
+        <div class="nav__userfield">
+            <a href="#" class="add">+ Add</a>
+            <a href="#" class="notification">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <span class="circle">3</span>
+            </a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">
+                    <div class="user-img"></div>
+                    <i id="caret" class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-content">
+                    <!-- <a href="#">Profile</a>
+                    <a href="#">Link 2</a> -->
+                    <a href="login.html">Logout</a>
+                </div>
+                <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <section class="content__area ">
+        <div class="heading container">
+            <h1>My Home</h1>
+            <p>List of my Home(s)</p>
+        </div>
+        <div class="container">
+            <nav class="breadcrumb">
+                <!-- <a class="breadcrumb-item" href="dashboard_1.html">Home</a> -->
+                <!-- <a class="breadcrumb-item" href="#"></a> -->
+                <span class="breadcrumb-item active">Homes</span>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Property
+                            </th>
+                            <th>
+                                Location
+                            </th>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Amenities
+                            </th>
+                            <th>
+                                status
+                            </th>
+                            <th>
+                                Owner
+                            </th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- <td><span class="user-img"></span> </td> -->
+                            <td>Flat 7, Twin Empire</td>
+                            <td>No 15c bola close</td>
+                            <td>Apartment</td>
+                            <td> 3 bedrooms, 4 toilets </td>
+                            <td><button class="btn-resize  btn-success">Rented</button></td>
+                            <td><button class="btn-resize btn-outline-secondary" data-toggle="modal" data-target="#exampleModalCenter">View</button></td>
+                            <!-- <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button> </td> -->
+                        </tr>
+                        <!-- <tr>
+                           
+                            <td>Bungalow Three</td>
+                            <td>plot 4b Alex Miracle Street</td>
+                            <td>Semi-detached</td>
+                            <td>4 bedrooms, 5 toilets</td>
+                            <td><button class="btn-resize  btn-primary">Occupied</button></td>
+                            <td><button class="btn-resize btn-outline-secondary">View</button></td>
+                            <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button></td>
+
+                        </tr>
+                        <tr>
+                          
+                            <td>Mansion one</td>
+                            <td>Aplha 1 Kings Landing</td>
+                            <td>Storey Building</td>
+                            <td>7 bedrooms, 10 toilets, self-contined BQ</td>
+                            <td><button class="btn-resize  btn-warning">Vacant</button></td>
+                            <td><button class="btn-resize btn-outline-secondary">View</button></td>
+                            <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button> </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>Office 3 Venture Capital</td>
+                            <td>No 1 Profit Street</td>
+                            <td>Office Complex</td>
+                            <td>Large Office Space</td>
+                            <td><button class="btn-resize  btn-primary">Occupied</button></td>
+                            <td><button class="btn-resize btn-outline-secondary">View</button></td>
+                            <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button> </td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Launch demo modal
+          </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">My Prfile</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card user__card">
+                            <!-- <h3>Welcome!</h3> -->
+                            <div class="user-img"></div>
+                            <!-- <span class="user-name">John Levis</span>
+                                    <span class="user-title">Summerland Admin</span> -->
+                            <!-- <hr> -->
+                            <!-- <div class="col-xs-3">
+                                    </div> -->
+                            <div class="col-xs-12">
+                                <div>
+                                    <span class="">Occupant Name:</span>
+                                    <span class="profile__name">Ore SochiVal</span>
+                                </div>
+                                <div>
+                                    <span class="">House Unit:</span>
+                                    <span class="profile__house">Flat 3A Toni's Apartment</span>
+                                </div>
+                                <div>
+                                    <span class="">Move-in Date:</span>
+                                    <span class="profile__Move-in">30/04/2018</span>
+                                </div>
+                                <div>
+                                    <span class="">Rent Due:</span>
+                                    <span class="profile__due-date">30/05/2018</span>
+                                </div>
+                                <div>
+                                    <span class="">Service Charge:</span>
+                                    <span class="profile__service_charge">Paid</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class=" footer fixed-bottom">
+        <ul class="dashboard__footer__list ">
+            <li class="dashboard__footer__left">
+                <P>&copy copyright 2018 Summerland all right reserved</P>
+            </li>
+            <!-- <li class="footer__right">
+                <ul class="footer__list mr-3">
+                    <li class="">
+                        <a href="#"><img src="assets/img/facebook.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/twitter.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/instagram.png" alt="facebook"></a>
+                    </li>
+                </ul>
+            </li> -->
+        </ul>
+    </footer>
+
+
+    <script src=" assets/pluggins/jquery.min.js "></script>
+    <script src="assets/pluggins/popper.min.js "></script>
+    <script src="assets/pluggins/bootstrap/js/bootstrap.min.js "></script>
+
+    <!-- Mainly scripts -->
+    <!-- <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script> -->
+
+    <!-- Flot -->
+    <!-- <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/jquery.flot.symbol.js"></script>
+    <script src="js/plugins/flot/curvedLines.js"></script> -->
+
+    <!-- Peity -->
+    <!-- <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script> -->
+
+    <!-- Custom and plugin javascript -->
+    <!-- <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script> -->
+
+    <!-- jQuery UI -->
+    <!-- <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homes | SUMMERLAND</title>
+    <!-- <link rel="icon" type="image/png" href="assets/img/icon.png"> -->
+    <link href="https://fonts.googleapis.com/css?family=Pompiere" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet " type="text/css " media="screen " href="assets/pluggins/bootstrap/css/bootstrap.min.css ">
+    <!-- <link href="assets/pluggins/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/pluggins/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="assets/pluggins/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet"> -->
+    <!-- <link href="assets/pluggins/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet " href="assets/css/grid.css ">
+    <link rel="stylesheet " href="assets/css/main.css ">
+    <link rel="stylesheet " href="assets/css/styles.css ">
+</head>
+
+<body>
+
+    <section id="sideMenu">
+        <div class="nav__text">
+            <span><h2>SUMMERLAND</h2></span>
+        </div>
+        <nav class="nav__sidebar">
+            <a href="dashboard1.php">
+                <span>
+                        <i class=" fa fa-th-large" aria-hidden="true"></i>
+                </span>
+                <span class=""> 
+                    Dashboard
+                </span>
+            </a>
+            <a href="agent.html" class="">
+                <span>
+                    <i class=" fa fa-coffee" aria-hidden="true"></i>
+                 </span>
+                <span class=""> 
+                     Agent
+                </span>
+            </a>
+            <a href="tenants.html" class="">
+                <span>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </span>
+                <span> 
+                   Tenants
+                </span>
+            </a>
+            <a href="houses.html" class="active">
+                <span>
+                     <i class=" active fa fa-home" aria-hidden="true"></i>
+                 </span>
+                <span class="active"> 
+                      Homes
+                </span>
+            </a>
+            <!-- <a href="#" class="">
+                <span>
+                     <i class="side fa fa-credit-card" aria-hidden="true"></i>
+                </span>
+                <span> 
+                        Payment
+                 </span>
+            </a> -->
+            <a href="complaint.php" class="">
+                <span>
+                        <i class=" side fa fa-mail-reply-all" aria-hidden="true"></i>
+                      </span>
+                <span> 
+                          Messages
+                    </span>
+            </a>
+            <!-- <a href="#"><i class=" fa fa-sticky-note-o"></i> Item</a> -->
+            <!-- <a href="#"><i class="side fa fa-bookmark-o"></i> Item</a>
+            <a href="#"><i class="side fa fa-calendar-check-o"></i> Item</a>
+            <a href="#"><i class="side fa fa-user-circle"></i> Item</a>
+            <a href="#"><i class="side fa fa-cogs"></i> Item</a> -->
+        </nav>
+    </section>
+    <header class="nav__header">
+        <div class="nav__searchbar">
+            <!-- <a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#"><i class="fa fa-bars"></i> </a> -->
+            <span class="span__searchbar"> <i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="text" name="" placeholder="Type here for search">
+        </div>
+        <div class="nav__userfield">
+            <a href="#" class="add">+ Add</a>
+            <a href="#" class="notification">
+                <i class="fa fa-bell-o" aria-hidden="true"></i>
+                <span class="circle">3</span>
+            </a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">
+                    <div class="user-img"></div>
+                    <i id="caret" class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <div class="dropdown-content">
+                    <!-- <a href="#">Profile</a>
+                    <a href="#">Link 2</a> -->
+                    <a href="login.html">Logout</a>
+                </div>
+                <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <section class="content__area ">
+        <div class="heading container">
+            <h1>Homes</h1>
+            <p>List Summerland Home</p>
+        </div>
+        <div class="container">
+            <nav class="breadcrumb">
+                <!-- <a class="breadcrumb-item" href="dashboard_1.html">Home</a> -->
+                <!-- <a class="breadcrumb-item" href="#"></a> -->
+                <span class="breadcrumb-item active">Homes</span>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Property
+                            </th>
+                            <th>
+                                Location
+                            </th>
+                            <th>
+                                Type
+                            </th>
+                            <th>
+                                Amenities
+                            </th>
+                            <th>
+                                status
+                            </th>
+                            <th>
+                                Agent
+                            </th>
+                            <th>
+                                action
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- <td><span class="user-img"></span> </td> -->
+                            <td>Flat 7, Twin Empire</td>
+                            <td>No 15c bola close</td>
+                            <td>Apartment</td>
+                            <td> 3 bedrooms, 4 toilets </td>
+                            <td><a href="apartment_1.html" class="btn-resize  btn-warning">Vacant</a></td>
+                            <td><button class="btn-resize btn-outline-secondary">View</button></td>
+                            <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button> </td>
+                        </tr>
+                        <tr>
+                            <!-- <td><span class="user-img"></span> </td> -->
+                            <td>Bungalow Three</td>
+                            <td>plot 4b Alex Miracle Street</td>
+                            <td>Semi-detached</td>
+                            <td>4 bedrooms, 5 toilets</td>
+                            <td><button class="btn-resize  btn-primary">Occupied</button></td>
+                            <td><button class="btn-resize btn-outline-secondary">View</button></td>
+                            <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button></td>
+
+                        </tr>
+                        <tr>
+                            <!-- <td><span class="user-img"></span> </td> -->
+                            <td>Mansion one</td>
+                            <td>Aplha 1 Kings Landing</td>
+                            <td>Storey Building</td>
+                            <td>7 bedrooms, 10 toilets, self-contined BQ</td>
+                            <td><button class="btn-resize  btn-warning">Vacant</button></td>
+                            <td><button class="btn-resize btn-outline-secondary">View</button></td>
+                            <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button> </td>
+                        </tr>
+                        <tr>
+                            <!-- <td><span class="user-img"></span> </td> -->
+                            <td>Office 3 Venture Capital</td>
+                            <td>No 1 Profit Street</td>
+                            <td>Office Complex</td>
+                            <td>Large Office Space</td>
+                            <td><button class="btn-resize  btn-primary">Occupied</button></td>
+                            <td><button class="btn-resize btn-outline-secondary">View</button></td>
+                            <td><button class="btn-resize btn-outline-primary"><i class="fa fa-clipboard"></i> Edit</button>||<button class="btn-resize btn-outline-danger"><i class="fa fa-trash-o"></i>Delete</button> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">My Prfile</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div> -->
+                <div class="modal-body">
+                    <div class="col-xs-12 col-md-6 col-lg-6">
+                        <div class="">
+                            <div class="card card__one">
+                                <div class="card-body">
+                                    <img src="assets/img/apartment-interior-room.jpeg" alt="Living room">
+
+                                    <a class="" href="apartment.html">.....More detail</a>
+                                </div>
+                                <div class="">
+                                    <div class="card no__card__1">
+                                        <p>Amenities</p>
+                                        <span><i class="fa fa-bathtub"></i>Bathroom</span><span><i class="fa fa-bed"></i> Bed</span>
+                                        <span><i class="fas fa-plug"></i> Stable Power</span><span><i class="fab fa-superpowers"></i> Air conditional</span> <br>
+                                        <span><i class="fa fa-mac"></i> Washing Machine</span><span><i class="fas fa-wifi"></i>Wifi</span><span><i class="fas fa-lock"></i> 24/7 security</span><span><i class="fas fa-car"></i> Parking</span> <br>
+                                        <span><i class="fa fa-smoking"></i>Furniture</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class=" col-xs-12 col-md-12 col-lg-12 ">
+                        <div class="card form__card" style="border:transparent">
+                          
+                            <h3>Complaint Form</h3>
+                            <p>Please Send us details of any issues you might be experiencing, Our complaint center will analyze your complaint and take the appropriate measures that you complaints will not happen again in future</p>
+                            <form>
+                                <label for="">Date of Complaint</label>
+                                <div class="form-group">
+                                    <input type="date" class="form-control" id="" aria-describedby="" placeholder="Full Name">
+                                  
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Date of Incident</label>
+                                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                  
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Complaint Details</label>
+                                    <textarea type="text" class="form-control" id="landing__textarea" aria-describedby="" placeholder=""></textarea>
+
+                                </div>
+                                <div class="">
+                                    <button type="submit" class="btn btn-white submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> -->
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class=" footer fixed-bottom">
+            <ul class="dashboard__footer__list ">
+                <li class="dashboard__footer__left">
+                    <P>&copy copyright 2018 Summerland all right reserved</P>
+                </li>
+                <!-- <li class="footer__right">
+                <ul class="footer__list mr-3">
+                    <li class="">
+                        <a href="#"><img src="assets/img/facebook.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/twitter.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/instagram.png" alt="facebook"></a>
+                    </li>
+                </ul>
+            </li> -->
+            </ul>
+        </footer>
+
+
+
+        <!-- <script>
+            $('#exampleModal').on('show.bs.modal', function(event) {
+                var button = $(event.relatedTarget) // Button that triggered the modal
+                var recipient = button.data('whatever') // Extract info from data-* attributes
+                    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+                    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+                var modal = $(this)
+                modal.find('.modal-title').text('New message to ' + recipient)
+                modal.find('.modal-body input').val(recipient)
+            })
+        </script> -->
+        <script src=" assets/pluggins/jquery.min.js "></script>
+        <script src="assets/pluggins/popper.min.js "></script>
+        <script src="assets/pluggins/bootstrap/js/bootstrap.min.js "></script>
+        <!-- Mainly scripts -->
+        <!-- <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script> -->
+
+        <!-- Flot -->
+        <!-- <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/jquery.flot.symbol.js"></script>
+    <script src="js/plugins/flot/curvedLines.js"></script> -->
+
+        <!-- Peity -->
+        <!-- <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script> -->
+
+        <!-- Custom and plugin javascript -->
+        <!-- <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script> -->
+
+        <!-- jQuery UI -->
+        <!-- <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script> -->
+</body>
+
+</html>
