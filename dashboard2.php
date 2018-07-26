@@ -89,9 +89,10 @@ $numRows = mysqli_num_rows($result);
                     <i id="caret" class="fa fa-caret-down" aria-hidden="true"></i>
                 </a>
                 <div class="dropdown-content">
-                    <!-- <a href="#">Profile</a>
-                    <a href="#">Link 2</a> -->
-                    <a href="login.html">Logout</a>
+                <form action="logout.php" method="POST">
+                    <button type="submit" name="logout" class="btn btn-outline-white my-3 mx-1 my-sm-0">Logout</button>
+                </form>
+                    <!-- <a href="logout.php">Logout</a> -->
                 </div>
                 <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="#">Action</a>
